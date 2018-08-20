@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
     // ENCODE THE QUERY STRING TO REMOVE WHITE SPACES AND RESTRICTED CHARACTERS
     var term = encodeURIComponent(queryString);
     // PUT THE SEARCH TERM INTO THE GIPHY API SEARCH URL
-    var url = 'http://api.giphy.com/v1/gifs/search?q=' + term + '&api_key=CXzuNgWC499r8SEp3TfN1huURe7kwjXk'
+    var url = 'http://api.giphy.com/v1/gifs/search?q=' + term + '&api_key=dc6zaTOxFJmzC'
 
     http.get(url, function(response) {
       response.setEncoding('utf8');
