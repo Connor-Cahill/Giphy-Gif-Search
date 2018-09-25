@@ -45,11 +45,6 @@ app.get('/', function (req, res) {
   });
 
 
-  app.get('/', function (req, res) {
-    giphy.search(req.query.term, function (err, response) {
-      res.render('home', {gifs: response.data})
-    });
-  });
 
 app.get('/greetings/:name', function (req, res){
   var name = req.params.name;
